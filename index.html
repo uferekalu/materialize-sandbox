@@ -29,11 +29,34 @@
             <button class="btn btn-large purple lighten-2">Read More</button>
             <button class="btn btn-large black">Read More</button>
             <button class="btn btn-large yellow black-text">Read More</button>
-            <button class="btn btn-large"><i class="material-icons left">cloud</i> Read More</button>
-        </div>
+            <button class="btn btn-large brown"><i class="material-icons left">cloud</i> Read More</button>
+
+            <!-- FLOATING BUTTON -->
+            <a href="#" class="btn-floating red btn-large"><i class="large material-icons">add</i></a>
+
+            <!-- FIXED ACTION BUTTON -->
+            <div class="fixed-action-btn">
+                <a href="#" class="btn-floating red btn-large"><i class="large material-icons">mode_edit</i></a>
+                <ul>
+                    <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">insert_chart</i></a></li>
+                    <li><a href="#" class="btn-floating blue btn-large"><i class="large material-icons">format_quote</i></a></li>
+                    <li><a href="#" class="btn-floating green btn-large"><i class="large material-icons">publish</i></a></li>
+                    <li><a href="#" class="btn-floating orange btn-large"><i class="large material-icons">attach_file</i></a></li>
+                </ul>
+            </div>
+
+            <!-- FLAT BUTTON -->
+            <a class="waves-effect waves-teal btn-flat">Button</a>
+
+        </div><!-- ./container -->
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function(){
+            $('.fixed-action-btn').floatingActionButton();
+        });
+      </script>
     </body>
   </html>
